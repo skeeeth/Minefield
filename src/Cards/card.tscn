@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlpa1sqk6vlou"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_2iixm"]
+size = Vector2(500, 500)
+
+[node name="Card" type="VBoxContainer"]
+offset_right = 200.0
+offset_bottom = 360.0
+
+[node name="Name" type="Label" parent="."]
+layout_mode = 2
+text = "Title"
+horizontal_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("PlaceholderTexture2D_2iixm")
+expand_mode = 5
+stretch_mode = 4
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+text = "sample text"
+scroll_active = false

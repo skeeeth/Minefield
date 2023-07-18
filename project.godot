@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Minefield"
+run/main_scene="res://src/game.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+TurnManager="*res://TurnManager.gd"
 
 [rendering]
 
