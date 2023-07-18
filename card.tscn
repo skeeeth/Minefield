@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://is4q0ddresmv"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_tjchp"]
+[ext_resource type="Texture2D" uid="uid://bfxjvmekvinda" path="res://CardBody.png" id="2_jhwq7"]
+
+[node name="Card" type="Node2D"]
+position = Vector2(1044, 576)
+script = ExtResource("1_tjchp")
+
+[node name="CardBody" type="Node2D" parent="."]
+
+[node name="CardSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_jhwq7")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_left = -188.0
+offset_top = -281.0
+offset_right = -54.0
+offset_bottom = -243.0
+scale = Vector2(0.352022, 0.366697)
+text = "MineField
+"

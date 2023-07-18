@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://yfotv6srvp6p"]
+
+[ext_resource type="Script" path="res://Card.gd" id="1_1uiox"]
+[ext_resource type="Texture2D" uid="uid://bfxjvmekvinda" path="res://CardBody.png" id="2_xx4bb"]
+
+[node name="Card" type="Node2D"]
+position = Vector2(1044, 576)
+script = ExtResource("1_1uiox")
+
+[node name="CardBody" type="Node2D" parent="."]
+
+[node name="CardSprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_xx4bb")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -187.0
+offset_top = -281.0
+offset_right = -106.0
+offset_bottom = -255.0
+scale = Vector2(0.599961, 0.68)
+text = "Mine-Field"
